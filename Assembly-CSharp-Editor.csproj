@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{94CB8559-99A7-E421-4692-BC84C73005AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_5;UNITY_5_6;UNITY_5;UNITY_ADS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;UNITY_HAS_GOOGLEVR;ENABLE_DUCK_TYPING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:/Unity 5.6.5/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:/Unity 5.6.5/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\AudienceNetwork\Editor\Android\ManifestMod.cs" />
+     <Compile Include="Assets\AudienceNetwork\Editor\AudienceNetworkBuild.cs" />
+     <Compile Include="Assets\AudienceNetwork\Editor\AudienceNetworkConsoleEndpoint.cs" />
+     <Compile Include="Assets\AudienceNetwork\Editor\AudienceNetworkPostprocess.cs" />
+     <Compile Include="Assets\AudienceNetwork\Editor\AudienceNetworkSettingsEditor.cs" />
+     <Compile Include="Assets\AudienceNetwork\Editor\Utility.cs" />
+     <Compile Include="Assets\Fabric\Editor\CommonBuild\FabricCommonBuild.cs" />
+     <Compile Include="Assets\Fabric\Editor\FabricSetup.cs" />
+     <Compile Include="Assets\Fabric\Editor\FabricUtils.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\API\AsyncV1.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\API\Parser.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\API\V1.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Controller\KitController.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Controller\KitInstallationChecker.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Controller\KitUtils.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Controller\PluginController.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Detail\AsyncTaskRunner.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Detail\AsyncTaskRunnerBuilder.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Detail\Runner.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Detail\Strings.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Detail\TimeUtils.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Editor.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Images\Loader.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Model\App.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Model\ImportedKit.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Model\KitStatus.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Model\Organization.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Model\Settings.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Net\Constants.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Net\OAuth\Client.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Net\Utils.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\Resources\Manager.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\Animation\Driver.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\ConflictResolutionPage.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\KitSelectionPage.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\LoginPage.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\ManualInitializationPage.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\OrganizationsPage.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\Page.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\Render.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\Templates\InstructionsPage.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\Templates\PrefabPage.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\UpdatePage.cs" />
+     <Compile Include="Assets\Fabric\Editor\GUI\View\ValidationPage.cs" />
+     <Compile Include="Assets\Fabric\Editor\Info.cs" />
+     <Compile Include="Assets\Fabric\Editor\Postbuild\FabricBuildEventAndroid.cs" />
+     <Compile Include="Assets\Fabric\Editor\Postbuild\FabricPostBuildiOS.cs" />
+     <Compile Include="Assets\Fabric\Editor\Postbuild\PostBuildiOS.cs" />
+     <Compile Include="Assets\Fabric\Editor\Prebuild\AndroidBuildPropertiesManager.cs" />
+     <Compile Include="Assets\Fabric\Editor\Prebuild\FabricAndroidPrebuild.cs" />
+     <Compile Include="Assets\Fabric\Editor\Prebuild\PropertiesWriter.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\AssetCatalog.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\JsonParser.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\PBX\Elements.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\PBX\Lexer.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\PBX\Objects.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\PBX\Parser.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\PBX\Sections.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\PBX\Serializer.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\PBX\Utils.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\PBXProject.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\PBXProjectData.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\PlistParser.cs" />
+     <Compile Include="Assets\Fabric\Editor\ThirdParty\xcodeapi\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Fabric\Editor\Update\Custodian.cs" />
+     <Compile Include="Assets\Fabric\Editor\Update\Dependency\DependencyGraphLegacy.cs" />
+     <Compile Include="Assets\Fabric\Editor\Update\Dependency\DependencyGraphManager.cs" />
+     <Compile Include="Assets\Fabric\Editor\Update\Dependency\DependencyGraphObject.cs" />
+     <Compile Include="Assets\Fabric\Editor\Update\Dependency\DependencyGraphResolver.cs" />
+     <Compile Include="Assets\Fabric\Editor\Update\FabricInstaller.cs" />
+     <Compile Include="Assets\Fabric\Editor\Update\FileUtils.cs" />
+     <Compile Include="Assets\Fabric\Editor\Update\PeriodicAnalyticsPinger.cs" />
+     <Compile Include="Assets\Fabric\Editor\Update\PeriodicUpdateChecker.cs" />
+     <Compile Include="Assets\Fabric\Editor\Update\PeriodicUpdateManager.cs" />
+     <Compile Include="Assets\Fabric\Editor\Update\TimeoutWebClient.cs" />
+     <Compile Include="Assets\Fabric\Kits\Crashlytics\Editor\CrashlyticsSetup.cs" />
+     <Compile Include="Assets\Fabric\Kits\Crashlytics\Editor\GUI\Controller\Controller.cs" />
+     <Compile Include="Assets\Fabric\Kits\Crashlytics\Editor\GUI\CrashlyticsMenuItems.cs" />
+     <Compile Include="Assets\Fabric\Kits\Crashlytics\Editor\GUI\View\DashboardPage.cs" />
+     <Compile Include="Assets\Fabric\Kits\Crashlytics\Editor\Info.cs" />
+     <Compile Include="Assets\Fabric\Kits\Crashlytics\Editor\Postbuild\CrashlyticsPostBuildiOS.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSAndroidSetupUI.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSDocsUI.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSIOSSetupUI.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSPostBuild.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSProjectSettings.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSStrings.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSUpgrader.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\GPGSUtil.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\NearbyConnectionUI.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\PlistBuddyHelper.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Elements.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Lexer.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Objects.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\PBXProject.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Parser.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Sections.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Serializer.cs" />
+     <Compile Include="Assets\GooglePlayGames\Editor\xcode\Utils.cs" />
+     <Compile Include="Assets\SUGame\Notification\Editor\NotificationItemPropertyDrawer.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Asset Types\Editor\AtlasAssetInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Asset Types\Editor\SkeletonDataAssetInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\AssetDatabaseAvailabilityDetector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\BoneFollowerInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\Menus.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonAnimationInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonAnimatorInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonBaker.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonBakingWindow.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonDebugWindow.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SkeletonRendererInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SpineAttributeDrawers.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SpineEditorUtilities.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Editor\SpineInspectorUtility.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\BoundingBoxFollower\Editor\BoundingBoxFollowerInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\CustomMaterials\Editor\SkeletonRendererCustomMaterialsInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ragdoll\Editor\SkeletonRagdoll2DInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Ragdoll\Editor\SkeletonRagdollInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\Editor\SpineSpriteShaderGUI.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\Editor\BoneFollowerGraphicInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\Editor\SkeletonGraphicInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonPartsRendererInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonRenderSeparatorInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\Editor\SlotBlendModesEditor.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonUtility\Editor\SkeletonUtilityBoneInspector.cs" />
+     <Compile Include="Assets\Spine\spine-unity\SkeletonUtility\Editor\SkeletonUtilityInspector.cs" />
+     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Editor\ReporterEditor.cs" />
+     <None Include="Assets\Spine\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Utility\HiddenPass.shader" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-config-unity\maven-metadata.xml" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Spine-Skeleton-Fill.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpritePixelLighting.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteVertexLighting.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteShadows.cginc" />
+     <None Include="Assets\Fabric\NOTICE.txt" />
+     <None Include="Assets\Firebase\Editor\FirebaseMessaging_v1.0.1_manifest.txt" />
+     <None Include="Assets\Firebase\Editor\FirebaseRemoteConfig_v1.0.0_manifest.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteShadows.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritePixelLighting.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteLighting.cginc" />
+     <None Include="Assets\Graphics\GameKimCuong\spine\spine.atlas.txt" />
+     <None Include="Assets\Firebase\Editor\FirebaseInstanceId.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic-TintBlack.shader" />
+     <None Include="Assets\Firebase\Editor\FirebaseAnalytics_v1.1.1_manifest.txt" />
+     <None Include="Assets\Firebase\Plugins\link.xml" />
+     <None Include="Assets\Firebase\Editor\FirebaseRemoteConfig_v1.0.1_manifest.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
+     <None Include="Assets\GooglePlayGames\Plugins\Android\GooglePlayGamesManifest.plugin\AndroidManifest.xml" />
+     <None Include="Assets\GooglePlayGames\Editor\template-GameInfo.txt" />
+     <None Include="Assets\Plugins\Android\crashlytics\NOTICE.txt" />
+     <None Include="Assets\Firebase\Editor\FirebaseAnalytics_v1.0.0_manifest.txt" />
+     <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\crashlytics-wrapper\AndroidManifest.xml" />
+     <None Include="Assets\Firebase\Editor\FirebaseAnalytics_v1.0.1_manifest.txt" />
+     <None Include="Assets\GooglePlayGames\Editor\template-AndroidManifest.txt" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-instance-id-unity\maven-metadata.xml" />
+     <None Include="Assets\Firebase\Editor\FirebaseRemoteConfig_v1.1.1_manifest.txt" />
+     <None Include="Assets\Firebase\Editor\AppDependencies.xml" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Screen.shader" />
+     <None Include="Assets\Plugins\Android\fabric-init\AndroidManifest.xml" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-analytics-unity\maven-metadata.xml" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
+     <None Include="Assets\Firebase\Editor\FirebaseAnalytics_v1.1.2_manifest.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteUnlit.cginc" />
+     <None Include="Assets\Spine\spine-unity\version.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritesPixelLit.shader" />
+     <None Include="Assets\Firebase\Editor\AnalyticsDependencies.xml" />
+     <None Include="Assets\Firebase\Editor\FirebaseMessaging_v1.1.2_manifest.txt" />
+     <None Include="Assets\Firebase\Editor\FirebaseMessaging.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Spine-Skeleton-Tint.shader" />
+     <None Include="Assets\Firebase\Editor\FirebaseMessaging_v1.1.1_manifest.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritesUnlit.shader" />
+     <None Include="Assets\Plugins\Android\crashlytics\THIRDPARTYLICENSE.txt" />
+     <None Include="Assets\Firebase\Editor\FirebaseMessaging_v1.0.0_manifest.txt" />
+     <None Include="Assets\Firebase\Editor\RemoteConfigDependencies.xml" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Utility\Hidden-Spine-Bones.shader" />
+     <None Include="Assets\Firebase\Editor\FirebaseRemoteConfig.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Ghost\Shaders\Spine-Special-Skeleton-Ghost.shader" />
+     <None Include="Assets\GooglePlayGames\Editor\m2repository\com\google\games\gpgs-plugin-support\maven-metadata.xml" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteVertexLighting.cginc" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-messaging-unity\maven-metadata.xml" />
+     <None Include="Assets\Plugins\Android\Firebase\res\values\google-services.xml" />
+     <None Include="Assets\Plugins\Android\answers\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\fabric\NOTICE.txt" />
+     <None Include="Assets\Firebase\Editor\InstanceIdDependencies.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Resources\Tutorial.txt" />
+     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
+     <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\fabric\Template-AndroidManifest.xml" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CameraDepthNormalsTexture.shader" />
+     <None Include="Assets\StreamingAssets\build_info.txt" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Spine-Skeleton-TintBlack.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderShared.cginc" />
+     <None Include="Assets\GooglePlayGames\Editor\template-Constants.txt" />
+     <None Include="Assets\Firebase\Editor\FirebaseRemoteConfig_v1.1.2_manifest.txt" />
+     <None Include="Assets\AudienceNetwork\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\GooglePlayGames\Editor\GPGSDependencies.xml" />
+     <None Include="Assets\Spine\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic.shader" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Spine-Skeleton.shader" />
+     <None Include="Assets\Firebase\Editor\FirebaseAnalytics.txt" />
+     <None Include="Assets\Firebase\Editor\FirebaseAnalytics_v1.1.0_manifest.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CameraNormalsTexture.shader" />
+     <None Include="Assets\Plugins\Android\res\values\games-ids.xml" />
+     <None Include="Assets\Plugins\Android\fabric\res\values\strings.xml" />
+     <None Include="Assets\Plugins\Android\beta\AndroidManifest.xml" />
+     <None Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsDependencies.xml" />
+     <None Include="Assets\Firebase\Editor\FirebaseRemoteConfig_v1.1.0_manifest.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CameraDepthTexture.shader" />
+     <None Include="Assets\AudienceNetwork\Audience Network README.txt" />
+     <None Include="Assets\Spine\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Multiply.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderMaths.cginc" />
+     <None Include="Assets\Spine\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
+     <None Include="Assets\Plugins\Android\crashlytics\AndroidManifest.xml" />
+     <None Include="Assets\AudienceNetwork\Editor\Android\DefaultAndroidManifest.xml" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\SpriteDepthNormalsTexture.shader" />
+     <None Include="Assets\Plugins\Android\fabric\AndroidManifest.xml" />
+     <None Include="Assets\Spine\spine-unity\Shaders\Spine-SkeletonLit.shader" />
+     <None Include="Assets\Spine\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteSpecular.cginc" />
+     <None Include="Assets\Firebase\Editor\FirebaseMessaging_v1.1.0_manifest.txt" />
+     <None Include="Assets\Plugins\Android\fabric\THIRDPARTYLICENSE.txt" />
+     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver.txt" />
+     <None Include="Assets\Firebase\Editor\MessagingDependencies.xml" />
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>D:/Unity 5.6.5/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Analytics">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Fabric/Managed/Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="Validator">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Fabric/Managed/Validator.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Editor">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Analytics">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.App">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.InstanceId">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Firebase/Plugins/Firebase.InstanceId.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Messaging">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Firebase/Plugins/Firebase.Messaging.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Platform">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.RemoteConfig">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Firebase/Plugins/Firebase.RemoteConfig.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.MiniJson">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Compat">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Tasks">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.IOSResolver">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.JarResolver">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandler">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandlerImpl">
+ <HintPath>C:/Users/MSI/Documents/BlockPuzzleGalaxy/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{9670DC9A-7F29-7AD7-B816-51AE98A5568E}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

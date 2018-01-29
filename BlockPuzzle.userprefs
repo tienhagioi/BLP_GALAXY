@@ -1,0 +1,32 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SUGame\SuFacebookAudience\SuFacebookAudience.cs">
+    <Files>
+      <File FileName="Assets\SUGame\SuFacebookAudience\SuFacebookAudience.cs" Line="8" Column="68" />
+      <File FileName="Assets\SUGame\Admob\SUAdmob.cs" Line="138" Column="18" />
+      <File FileName="Assets\AudienceNetwork\Library\AdView.cs" Line="1" Column="1" />
+      <File FileName="Assets\SUGame\StringValuables.cs" Line="29" Column="1" />
+      <File FileName="Assets\SUGame\RemoteConfig\SURemoteConfig.cs" Line="176" Column="26" />
+      <File FileName="Assets\SUGame\Notification\LocalNotification.cs" Line="1" Column="1" />
+      <File FileName="Assets\SUGame\Notification\NotificationTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\SUGame\Notification\SUNotification.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameplayControl.cs" Line="626" Column="51" />
+      <File FileName="Assets\Spine\spine-unity\Mesh Generation\SpineMesh.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Exstension\SafeFloat.cs" Line="1" Column="1" />
+      <File FileName="Assets\LoadingControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Exstension\SafeInt.cs" Line="30" Column="36" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LosePopupControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\RateControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GPG_LeaderboardManager.cs" Line="73" Column="1" />
+      <File FileName="Assets\GoogleMobileAds\Api\BannerView.cs" Line="80" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="E:\BlockPuzzle\Assets\Scripts\GPG_LeaderboardManager.cs" line="128" column="1" />
+      <Breakpoint file="E:\BlockPuzzle\Assets\SUGame\Admob\SUAdmob.cs" line="240" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

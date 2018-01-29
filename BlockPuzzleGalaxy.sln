@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockPuzzleGalaxy", "Assembly-CSharp.csproj", "{9670DC9A-7F29-7AD7-B816-51AE98A5568E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockPuzzleGalaxy", "Assembly-CSharp-Editor.csproj", "{94CB8559-99A7-E421-4692-BC84C73005AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9670DC9A-7F29-7AD7-B816-51AE98A5568E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9670DC9A-7F29-7AD7-B816-51AE98A5568E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9670DC9A-7F29-7AD7-B816-51AE98A5568E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9670DC9A-7F29-7AD7-B816-51AE98A5568E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94CB8559-99A7-E421-4692-BC84C73005AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94CB8559-99A7-E421-4692-BC84C73005AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94CB8559-99A7-E421-4692-BC84C73005AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94CB8559-99A7-E421-4692-BC84C73005AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="firebase_database_url" translatable="false">https://block-puzzle-2018-new.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">353253653176</string>
+  <string name="google_storage_bucket" translatable="false">block-puzzle-2018-new.appspot.com</string>
+  <string name="project_id" translatable="false">block-puzzle-2018-new</string>
+  <string name="google_api_key" translatable="false">AIzaSyACu7v95bAGEKLSLPmdJgh4c0J-V6t3s40</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyACu7v95bAGEKLSLPmdJgh4c0J-V6t3s40</string>
+  <string name="google_app_id" translatable="false">1:353253653176:android:744d9000a2637191</string>
+  <string name="default_web_client_id" translatable="false">353253653176-gki824sji1f97c01apllsdsbs2c9gji4.apps.googleusercontent.com</string>
+</resources>
